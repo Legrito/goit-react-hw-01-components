@@ -1,5 +1,31 @@
 .App {
+  font-family: 'Baloo Tammudu 2', cursive;
+  margin: 0 auto;
+  padding-top: 100px;
   text-align: center;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+body {
+  display: block;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
 }
 
 .App-logo {
