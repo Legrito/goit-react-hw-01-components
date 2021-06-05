@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Profile.module.scss';
+import logo from '../logo.svg';
 
 const Profile = ({ name, tag, location, avatar, stats: { followers, views, likes} }) => (
     <div className={styles.profile}>
@@ -31,5 +32,23 @@ const Profile = ({ name, tag, location, avatar, stats: { followers, views, likes
     </ul>
     </div>
 );
+
+Profile.defaultProps = {
+    tag: 'some-tag',
+    avatar: logo,
+    stats: {
+        followers: 0,
+        views: 0,
+        likes: 0
+    }
+};
+
+Profile.propTypes = {
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+    stats: PropTypes.objectOf(PropTypes.number)
+}
 
 export default Profile;

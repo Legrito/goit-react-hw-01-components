@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Profile from './Task1/Profile.js';
 import user from './Task1/user.json';

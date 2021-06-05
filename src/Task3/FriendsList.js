@@ -14,4 +14,8 @@ const FriendsList = ({ friends }) => (
    </ul>
 );
 
+FriendsList.propTypes = {
+   friends: PropTypes.arrayOf(PropTypes.object)
+}
+
 export default FriendsList;

@@ -16,4 +16,8 @@ const Statistics = ({title, stats}) => (
     </section>
 );
 
+Statistics.defaultProps = {
+    stats: PropTypes.arrayOf(PropTypes.object)
+};
+
 export default Statistics;
